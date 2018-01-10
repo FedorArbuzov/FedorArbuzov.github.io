@@ -1,0 +1,23 @@
+{
+  "name": "fedorarbuzov.github.io",
+  "version": "1.0.0",
+  "description": "home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedorArbuzov/FedorArbuzov.github.io.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Fedor Arbuzov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedorArbuzov/FedorArbuzov.github.io/issues"
+  },
+  "homepage": "https://github.com/FedorArbuzov/FedorArbuzov.github.io#readme"
+}
