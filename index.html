@@ -15,6 +15,16 @@
         color: #fff !important;
         background-color: #23605d !important;
     }
+    button {
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        /* show a hand cursor on hover; some argue that we
+        should keep the default arrow cursor for buttons */
+        cursor: pointer;
+    }
 </style>
 <body class="w3-light-grey">
 
@@ -136,7 +146,7 @@
             <p>If you have any questions or suggestions for cooperation, then be sure to leave your email and we will write you</p>
             <form action="/action_page.php" target="_blank">
                 <input placeholder="Message" required="" name="Message" type="text">
-                <button type="submit">
+                <button class="button" type="submit">
                     <i class="fa fa-paper-plane"></i> SEND EMAIL
                 </button>
             </form>
