@@ -28,6 +28,7 @@
         display: inline-block;
         text-align: center;
         text-decoration: none;
+        font-size: 20px;
 
         /* create a small space when buttons wrap on 2 lines */
         margin: 2px 0;
@@ -37,7 +38,7 @@
         border-radius: 0px;
 
         /* size comes from text & padding (no width/height) */
-        padding: 0.5em 1em;
+        padding: 0.75em 1em;
 
         /* make sure colors have enough contrast! */
         color: #ffffff;
@@ -55,6 +56,21 @@
         color: #23605d;
         border-color: currentColor;
         background-color: white;
+    }
+
+    input[type=email] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        font-size: 20px;
+    }
+
+    input[type=email]:focus {
+        border: 3px solid #555;
     }
 </style>
 <body class="w3-light-grey">
@@ -176,7 +192,7 @@
         <div class="w3-center w3-container" style="margin-top: 20px;">
             <p>If you have any questions or suggestions for cooperation, then be sure to leave your email and we will write you</p>
             <form action="/action_page.php" target="_blank">
-                <input placeholder="Message" required="" name="Message" type="text">
+                <input placeholder="Email" required="" name="Email" type="email">
                 <button class="button" type="submit">
                     <i class="fa fa-paper-plane"></i> SEND EMAIL
                 </button>
