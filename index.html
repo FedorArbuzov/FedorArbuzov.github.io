@@ -190,7 +190,7 @@
 
         <div class="w3-center w3-container">
             <p style="font-size: 20px">If you have any questions or suggestions for cooperation, then be sure to leave your email and we will write you:</p>
-            <form action="/action_page.php" target="_blank">
+            <form action="" target="_blank">
                 <input placeholder="Email" required="" name="Email" type="email">
                 <button class="button" type="submit">
                     <i class="fa fa-paper-plane"></i> SEND EMAIL
@@ -211,5 +211,14 @@
     <i class="fa fa-github w3-hover-opacity"></i>
     <i class="fa fa-vk w3-hover-opacity"></i>
 </footer>
+
+<script>
+    var sendEmailBtn = document.getElementsByClassName('button')[0];
+
+    sendEmailBtn.onclick = function () {
+        alert('12');
+    }
+
+</script>
 </body>
 </html>
