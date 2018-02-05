@@ -190,12 +190,10 @@
 
         <div class="w3-center w3-container">
             <p style="font-size: 20px">If you have any questions or suggestions for cooperation, then be sure to leave your email and we will write you:</p>
-            <form action="" target="_blank">
-                <input placeholder="Email" required="" name="Email" type="email">
-                <button class="button" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND EMAIL
-                </button>
-            </form>
+            <input class="inputEmail" placeholder="Email" required="" name="Email" type="email">
+            <button class="button" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND EMAIL
+            </button>
         </div>
         <!-- End Grid -->
     </div>
@@ -214,9 +212,11 @@
 
 <script>
     var sendEmailBtn = document.getElementsByClassName('button')[0];
+    var sendEmailInput = document.getElementsByClassName('inputEmail')[0];
 
+    console.log(sendEmailBtn, sendEmailInput);
     sendEmailBtn.onclick = function () {
-        alert('12');
+        alert(sendEmailInput.value);
     }
 
 </script>
